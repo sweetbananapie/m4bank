@@ -1,0 +1,135 @@
+@import url("./animations.css");
+
+body {
+  font-family: Pragmatica, sans-serif;
+  font-weight: 400;
+  background-color: rgb(var(--v-theme-background));
+}
+html,
+body {
+  overflow: auto !important;
+}
+.v-bottom-navigation {
+  --v-layout-bottom: 56px;
+  background: rgb(var(--v-theme-background)) !important;
+  position: absolute !important;
+  bottom: 2px !important;
+}
+html body .v-main {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--v-layout-bottom) + 2px);
+  overflow: hidden;
+  /* transform: scale(1); */
+}
+
+.over-transition {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.in-transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex: 0 0 0;
+  /* transform: scale(1); */
+}
+.scrollable-container {
+  background: rgb(var(--v-theme-background)) repeat;
+  /* background-image: url("../../shared/images/vintage-wallpaper.png"); */
+  /* background-blend-mode: multiply; */
+  padding: 20px 12px;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+.scrollable-container--active {
+  padding-bottom: var(--v-layout-bottom);
+  padding-bottom: calc(var(--v-layout-bottom) + 12px);
+}
+.fixed-on-page-bottom {
+  position: absolute;
+  left: 0;
+  /* right: 0; */
+  width: 100vw;
+  bottom: 0;
+}
+
+.v-overlay__scrim {
+  background: rgb(var(--v-theme-surface)) !important;
+}
+
+body .text-default {
+  color: rgb(var(--v-theme-on-default)) !important;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+b {
+  font-weight: 700 !important;
+}
+h1 {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 12px !important;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px !important;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.price-wrapper {
+  display: flex;
+  flex: 0 0 0 !important;
+  align-items: center;
+  white-space: nowrap;
+}
+.counter-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+}
+.counter-button {
+  height: 36px;
+  /* background-color: #eeeeee !important; */
+}
+.counter-number {
+  padding: 0px 22px;
+  margin: 0px -16px;
+  height: 36px;
+  line-height: 36px;
+  background: rgb(var(--v-theme-default));
+}
+
+.centered-content__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: auto;
+}
+.centered-content {
+  flex: 1 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

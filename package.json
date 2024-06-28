@@ -1,0 +1,37 @@
+{
+  "name": "my-vue-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@formkit/icons": "^1.6.1",
+    "@formkit/themes": "^1.6.2",
+    "@formkit/vue": "^1.6.1",
+    "@tma.js/sdk": "^1.5.3",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.11",
+    "lodash.debounce": "^4.0.8",
+    "maska": "^2.1.11",
+    "qs": "^6.12.1",
+    "socket.io-client": "^4.7.5",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "vuetify": "^3.6.0"
+  },
+  "devDependencies": {
+    "@mdi/font": "^7.4.47",
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/qs": "^6.9.15",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "unplugin-vue-router": "^0.8.5",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
